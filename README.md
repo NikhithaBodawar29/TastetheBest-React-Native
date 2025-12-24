@@ -1,23 +1,27 @@
-TasteTheBest – React Native App
+🍽️ TasteTheBest – React Native Food App
 
-TasteTheBest is a simple food browsing mobile app built using React Native.
-The project focuses on clean code, basic navigation, and list handling rather than complex UI.
+TasteTheBest is a simple, clean food browsing mobile application built using React Native.
+The goal of this project is to demonstrate real-world app structure, navigation, data handling, and performance-aware UI, rather than heavy UI design.
 
-Features
+✨ App Features
 
-Home screen with food list
+📱 Multiple screens with smooth navigation
 
-Search food by name
+🍔 Food listing with images
 
-Details screen for selected food
+🔍 Search functionality
 
-Smooth scrolling using FlatList
+📜 Scrollable list using FlatList (performance-friendly)
 
-Responsive layout (portrait & landscape)
+🧭 Stack navigation
 
-Reusable components
+📐 Responsive layout (works well in portrait & landscape)
 
-Tech Used
+🧩 Reusable components
+
+🎨 Clean and readable UI using core React Native components only
+
+🛠️ Tech Stack
 
 React Native
 
@@ -25,46 +29,92 @@ TypeScript
 
 React Navigation
 
-Functional components & Hooks
+Functional Components & Hooks
 
-Note:
-The project was developed using GitHub Codespaces with Expo due to system limitations.
-The structure and logic are compatible with React Native CLI.
+GitHub Codespaces (for development)
 
-Project Structure
-src/
- ├── components/
- ├── screens/
- ├── navigation/
- └── data/
-assets/
-App.tsx
+Expo (development environment)
 
-How to Run
+⚠️ Note:
+Due to local system limitations, the project was developed and tested using GitHub Codespaces with Expo.
+The app structure and logic are fully compatible with React Native CLI.
+
+📁 Project Structure
+TastetheBest
+│
+├── App.tsx
+├── assets
+│   └── images
+│       ├── food1.jpg
+│       ├── food2.jpg
+│       ├── food3.jpg
+│       ├── food4.jpg
+│       └── food5.jpg
+│
+└── src
+    ├── components
+    │   └── FoodCard.tsx
+    │
+    ├── data
+    │   └── foodData.ts
+    │
+    ├── navigation
+    │   └── StackNavigator.tsx
+    │
+    └── screens
+        ├── HomeScreen.tsx
+        └── DetailsScreen.tsx
+
+▶️ How to Run the Project
+Prerequisites
+
+Node.js
+
+GitHub account
+
+Expo Go app (for mobile testing)
+
+Steps
 npm install
 npm start
 
 
-Open using Expo Go or browser preview.
+Open the app using Expo Go (QR code)
 
-Key Decisions
+Or run in browser via Expo web preview
 
-Used FlatList for better performance
+🧠 Key Technical Decisions
 
-Kept UI simple and clean
+FlatList is used instead of ScrollView for better performance with lists
 
-Used reusable components for scalability
+Limited content width to keep mobile-like appearance on wide screens
 
-Future Improvements
+Reusable components (FoodCard) for scalability
 
-Redux for state management
+Simple local data to focus on architecture and UI behavior
 
-API integration
+Navigation separation for clean and maintainable code
 
-Offline storage
+🚀 Improvements With More Time
+
+Redux integration for global state management
+
+API-based data with pagination / infinite scroll
+
+Offline storage using AsyncStorage
 
 Favorites feature
 
-Final Note
+Better error & loading states
 
-This project demonstrates basic app structure, navigation, and clean coding practices suitable for a fresher-level React Native role.
+Unit testing
+
+👩‍💻 Developer Notes
+
+This project focuses on code quality, structure, and clarity, keeping the UI simple but functional.
+The approach mirrors how a real production app would be structured at an entry-level role.
+
+📌 Final Note
+
+Instructions were intentionally open-ended.
+This implementation prioritizes clean architecture, responsiveness, and readability over heavy UI styling.
