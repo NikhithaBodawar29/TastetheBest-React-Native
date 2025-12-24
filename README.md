@@ -1,45 +1,40 @@
-🍽️ TasteTheBest – React Native Food App
+# TasteTheBest – React Native Food App 🍔📱
 
-TasteTheBest is a simple, clean food browsing mobile application built using React Native.
-The goal of this project is to demonstrate real-world app structure, navigation, data handling, and performance-aware UI, rather than heavy UI design.
+## 📌 Project Overview
 
-✨ App Features
+**TasteTheBest** is a beginner-friendly React Native food browsing application built to demonstrate real-world mobile app concepts such as navigation, list rendering, search functionality, responsive layouts, and clean code structure.
 
-📱 Multiple screens with smooth navigation
+The app displays a list of food items with images, allows users to search, and navigate to a detailed view of each item. The focus of this project is **code quality, structure, and practical React Native patterns**, rather than heavy UI styling.
 
-🍔 Food listing with images
+---
 
-🔍 Search functionality
+## ✨ Features
 
-📜 Scrollable list using FlatList (performance-friendly)
+* 📱 Two-screen mobile app (Home & Details)
+* 🔍 Search functionality for food items
+* 🧭 Stack navigation between screens
+* 🖼️ Local image assets for food items
+* 📜 Optimized list rendering using `FlatList`
+* 📐 Responsive layout (works well in portrait & landscape)
+* 🧩 Reusable components (FoodCard)
+* 🧼 Clean and scalable folder structure
 
-🧭 Stack navigation
+---
 
-📐 Responsive layout (works well in portrait & landscape)
+## 🛠️ Tech Stack
 
-🧩 Reusable components
+* **React Native**
+* **TypeScript**
+* **React Navigation (Native Stack)**
+* **Expo (used via GitHub Codespaces due to system limitations)**
 
-🎨 Clean and readable UI using core React Native components only
+> ⚠️ Note: Although the original requirement was React Native CLI, Expo was used to ensure successful execution due to local machine constraints. Core React Native concepts and APIs are still followed.
 
-🛠️ Tech Stack
+---
 
-React Native
+## 📂 Project Structure
 
-TypeScript
-
-React Navigation
-
-Functional Components & Hooks
-
-GitHub Codespaces (for development)
-
-Expo (development environment)
-
-⚠️ Note:
-Due to local system limitations, the project was developed and tested using GitHub Codespaces with Expo.
-The app structure and logic are fully compatible with React Native CLI.
-
-📁 Project Structure
+```
 TastetheBest
 │
 ├── App.tsx
@@ -54,67 +49,69 @@ TastetheBest
 └── src
     ├── components
     │   └── FoodCard.tsx
-    │
     ├── data
     │   └── foodData.ts
-    │
     ├── navigation
     │   └── StackNavigator.tsx
-    │
     └── screens
         ├── HomeScreen.tsx
         └── DetailsScreen.tsx
+```
 
-▶️ How to Run the Project
-Prerequisites
+---
 
-Node.js
+## 🚀 How to Run the Project
 
-GitHub account
+### Prerequisites
 
-Expo Go app (for mobile testing)
+* Node.js
+* GitHub account
+* Expo Go app (for mobile testing)
 
-Steps
+### Steps
+
+```bash
+# install dependencies
 npm install
-npm start
 
+# start the app
+npx expo start
+```
 
-Open the app using Expo Go (QR code)
+You can run the app on:
 
-Or run in browser via Expo web preview
+* 📱 Mobile device (using Expo Go)
+* 🌐 Web browser
 
-🧠 Key Technical Decisions
+---
 
-FlatList is used instead of ScrollView for better performance with lists
+## 🧠 Key Technical Decisions
 
-Limited content width to keep mobile-like appearance on wide screens
+* **FlatList** was used instead of ScrollView for better performance with lists
+* **Responsive max-width layout** was implemented to avoid UI stretching on large screens
+* **Reusable components** were created to improve maintainability
+* **Separation of concerns** through structured folders (screens, components, data)
 
-Reusable components (FoodCard) for scalability
+---
 
-Simple local data to focus on architecture and UI behavior
+## 🔮 Improvements with More Time
 
-Navigation separation for clean and maintainable code
+* Redux integration for global state management
+* Persist data using AsyncStorage
+* API-based food data instead of static data
+* Favorites & cart functionality
+* Loading & error states
+* Dark mode support
 
-🚀 Improvements With More Time
+---
 
-Redux integration for global state management
+## 👩‍💻 Author
 
-API-based data with pagination / infinite scroll
+**Nikhitha Bodawar**
+Frontend / React Native Developer (Fresher)
 
-Offline storage using AsyncStorage
+---
 
-Favorites feature
+## 📎 Final Note
 
-Better error & loading states
-
-Unit testing
-
-👩‍💻 Developer Notes
-
-This project focuses on code quality, structure, and clarity, keeping the UI simple but functional.
-The approach mirrors how a real production app would be structured at an entry-level role.
-
-📌 Final Note
-
-Instructions were intentionally open-ended.
-This implementation prioritizes clean architecture, responsiveness, and readability over heavy UI styling.
+This project reflects my approach to building clean, understandable, and sca
